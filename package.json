@@ -9,6 +9,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
+    "unit-test": "jest",
     "test": "npm run lint && npm run unit-test"
   },
   "author": "veshu <tcveshu@gmail.com>",
@@ -24,11 +25,20 @@
   "repository": "git@github.com:veshu/gitzip.git",
   "homepage": "https://github.com/veshu/gitzip",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-es2017": "^6.24.1",
+    "chai": "^4.2.0",
+    "command-line-test": "^1.0.10",
     "eslint": "^5.6.1",
     "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-prettier": "^2.7.0",
     "fs": "0.0.1-security",
+    "jest": "^23.6.0",
+    "klaw-sync": "^6.0.0",
     "prettier": "^1.14.3",
-    "regenerator-runtime": "^0.12.1"
+    "regenerator-runtime": "^0.12.1",
+    "rimraf": "^2.6.2",
+    "unzip-stream": "^0.3.0"
   }
 }

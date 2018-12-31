@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`file structure cli: {"destination":"tests/tmp/test.zip","source":"tests/fixtures","exclude":[".dotfile"],"include":[".dotfile"]} 1`] = `
+Array [
+  "/.dotfile",
+  "/.gitignore",
+  "/readme.md",
+  "/sub",
+  "/sub/test.txt",
+  "/test.zip",
+]
+`;
+
+exports[`file structure cli: {"destination":"tests/tmp/test.zip","source":"tests/fixtures","exclude":[".dotfile"],"include":["test.log"]} 1`] = `
+Array [
+  "/.gitignore",
+  "/readme.md",
+  "/sub",
+  "/sub/test.txt",
+  "/test.zip",
+]
+`;
+
+exports[`file structure cli: {"destination":"tests/tmp/test.zip","source":"tests/fixtures"} 1`] = `
+Array [
+  "/.dotfile",
+  "/.gitignore",
+  "/readme.md",
+  "/sub",
+  "/sub/test.txt",
+  "/test.zip",
+]
+`;
+
+exports[`file structure cli: {"destination":"tests/tmp/test.zip","source":"tests/fixtures/"} 1`] = `
+Array [
+  "/.dotfile",
+  "/.gitignore",
+  "/readme.md",
+  "/sub",
+  "/sub/test.txt",
+  "/test.zip",
+]
+`;
+
+exports[`file structure cli: {"destination":"tests/tmp/test.zip","source":"tests/fixtures/sub/"} 1`] = `
+Array [
+  "/in.log",
+  "/test.txt",
+  "/test.zip",
+]
+`;
+
+exports[`file structure programmatic: {"destination":"tests/tmp/test.zip","source":"tests/fixtures","exclude":[".dotfile"],"include":[".dotfile"]} 1`] = `
+Array [
+  "/.dotfile",
+  "/.gitignore",
+  "/readme.md",
+  "/sub",
+  "/sub/test.txt",
+  "/test.zip",
+]
+`;
+
+exports[`file structure programmatic: {"destination":"tests/tmp/test.zip","source":"tests/fixtures","exclude":[".dotfile"],"include":["test.log"]} 1`] = `
+Array [
+  "/.gitignore",
+  "/readme.md",
+  "/sub",
+  "/sub/test.txt",
+  "/test.zip",
+]
+`;
+
+exports[`file structure programmatic: {"destination":"tests/tmp/test.zip","source":"tests/fixtures"} 1`] = `
+Array [
+  "/.dotfile",
+  "/.gitignore",
+  "/readme.md",
+  "/sub",
+  "/sub/test.txt",
+  "/test.zip",
+]
+`;
+
+exports[`file structure programmatic: {"destination":"tests/tmp/test.zip","source":"tests/fixtures/"} 1`] = `
+Array [
+  "/.dotfile",
+  "/.gitignore",
+  "/readme.md",
+  "/sub",
+  "/sub/test.txt",
+  "/test.zip",
+]
+`;
+
+exports[`file structure programmatic: {"destination":"tests/tmp/test.zip","source":"tests/fixtures/sub/"} 1`] = `
+Array [
+  "/in.log",
+  "/test.txt",
+  "/test.zip",
+]
+`;
