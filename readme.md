@@ -11,7 +11,13 @@ If the source folder doesn't contain `.gitignore` then all files will be zipped.
 ```
 npm install -g gitzip
 ```
-gitzip -d destination.zip -s source/ -x 'destination.zip' -i '.git'
+go to the folder you want to zip and run 
+```
+gitzip
+
+```
+
+This will generate `submission.zip`
 
 ## Command line usage within `package.json` scripts
 
