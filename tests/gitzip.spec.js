@@ -68,12 +68,8 @@ describe("file structure", () => {
     if (testCase.include) {
       command += ` -i ${testCase.include}`;
     }
-    console.log(command);
-    try {
-      child_process.execSync(command);
-    } catch (e) {
-      console.log(e);
-    }
+
+    child_process.execSync(command);
 
     await unzip(destination, tmpdir);
     const structure = getStructure(tmpdir);
