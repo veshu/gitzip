@@ -1,3 +1,32 @@
 language: node_js
 node_js:
-  - 8
+- 8
+- 10
+
+os:
+- linux
+- osx
+- windows
+
+# wait until after all node.js versions pass before deploying
+# https://docs.travis-ci.com/user/build-stages/deploy-npm/
+
+stages:
+  - test
+  - name: deploy
+    if: tag IS present AND repo = 'veshu/gitzip'
+
+jobs:
+  include:
+    - stage: deploy
+      node_js: stable
+      os: linux
+      script: skip
+      deploy:
+        provider: npm
+        email: tcveshu@gmail.com
+        api_key:
+          secure: $SECRET_KEY
+        on:
+          tags: true
+          repo: veshu/gitzip
