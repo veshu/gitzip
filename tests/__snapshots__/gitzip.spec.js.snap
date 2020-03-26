@@ -45,7 +45,6 @@ Array [
 
 exports[`file structure cli: {"destination":"tests/tmp/test.zip","source":"tests/fixtures/sub/"} 1`] = `
 Array [
-  "/in.log",
   "/test.txt",
   "/test.zip",
 ]
@@ -96,7 +95,6 @@ Array [
 
 exports[`file structure programmatic: {"destination":"tests/tmp/test.zip","source":"tests/fixtures/sub/"} 1`] = `
 Array [
-  "/in.log",
   "/test.txt",
   "/test.zip",
 ]
